@@ -11,7 +11,7 @@
 
     <header class="bg-[#004a99] text-white py-8 px-6 shadow-xl border-b-4 border-[#e31d2b]">
         <div class="container mx-auto">
-            <h1 class="text-3xl font-extrabold tracking-tight">CAMIL | Central de POPs</h1>
+            <h1 class="text-3xl font-extrabold tracking-tight text-sm">CAMIL | Central de POPs</h1>
             <p class="mt-2 text-blue-100 font-medium italic text-sm">Logística de Excelência - Unidade Goiânia</p>
         </div>
     </header>
@@ -19,66 +19,77 @@
     <main class="container mx-auto mt-10 p-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200">
-                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-orange-500">
-                    <span class="material-icons text-orange-400 mr-3">settings_backup_restore</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Logística Reversa</h2>
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="bg-slate-800 p-4 border-b-2 border-orange-500 flex items-center">
+                    <span class="material-icons text-orange-400 mr-2">settings_backup_restore</span>
+                    <h2 class="text-white font-bold uppercase text-xs">Logística Reversa</h2>
                 </div>
-                <div class="p-6 space-y-4">
-                    
-                    <a href="pops/Coleta DNC.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-orange-50 hover:border-orange-300 transition-all">
-                        <div class="flex items-center text-sm font-semibold">
-                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
-                            POP - Coleta DNC
-                        </div>
-                        <span class="material-icons text-slate-400">open_in_new</span>
-                    </a>
+                <div id="setor-reversa" class="p-4 space-y-3 min-h-[100px]">
+                    </div>
+            </div>
 
-                    <a href="pops/Coleta De Pallets.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-orange-50 hover:border-orange-300 transition-all">
-                        <div class="flex items-center text-sm font-semibold">
-                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
-                            POP - Coleta De Pallets
-                        </div>
-                        <span class="material-icons text-slate-400">open_in_new</span>
-                    </a>
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="bg-slate-800 p-4 border-b-2 border-blue-500 flex items-center">
+                    <span class="material-icons text-blue-400 mr-2">description</span>
+                    <h2 class="text-white font-bold uppercase text-xs">Faturamento e Transporte</h2>
+                </div>
+                <div id="setor-faturamento" class="p-4 space-y-3 min-h-[100px]">
+                    </div>
+            </div>
 
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="bg-slate-800 p-4 border-b-2 border-green-500 flex items-center">
+                    <span class="material-icons text-green-400 mr-2">inventory_2</span>
+                    <h2 class="text-white font-bold uppercase text-xs text-sm">Estoque</h2>
                 </div>
-            </section>
-
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200">
-                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-blue-500">
-                    <span class="material-icons text-blue-400 mr-3">description</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Faturamento e Transporte</h2>
-                </div>
-                <div class="p-6 space-y-4">
-                    
-                    <a href="pops/NF DEVOLUÇÃO.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all">
-                        <div class="flex items-center text-sm font-semibold">
-                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
-                            POP - NF DEVOLUÇÃO
-                        </div>
-                        <span class="material-icons text-slate-400">open_in_new</span>
-                    </a>
-
-                </div>
-            </section>
-
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200">
-                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-green-500">
-                    <span class="material-icons text-green-400 mr-3">inventory_2</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Estoque</h2>
-                </div>
-                <div class="p-8 text-center text-slate-400 text-sm italic">
-                    Aguardando upload de POPs de estoque...
-                </div>
-            </section>
+                <div id="setor-estoque" class="p-4 space-y-3 min-h-[100px]">
+                    </div>
+            </div>
 
         </div>
     </main>
 
-    <footer class="mt-20 py-10 border-t border-slate-200 text-center text-slate-400 text-xs">
-        <p>Organizado por <strong>Matheus Alves</strong> | Método OEL</p>
-    </footer>
+    <script>
+        // ========================================================
+        // PAINEL DE CONFIGURAÇÃO (OEL)
+        // Para mover um arquivo, mude o 'setor' para: 
+        // 'reversa', 'faturamento' ou 'estoque'
+        // ========================================================
+        const meusArquivos = [
+            { nome: "POP - Coleta DNC", arquivo: "Coleta DNC.pdf", setor: "reversa" },
+            { nome: "POP - Coleta De Pallets", arquivo: "Coleta De Pallets.pdf", setor: "reversa" },
+            { nome: "POP - NF DEVOLUÇÃO", arquivo: "NF DEVOLUÇÃO.pdf", setor: "reversa" },
+            // Exemplo de como adicionar novo:
+            // { nome: "Manual de Saída", arquivo: "saida.pdf", setor: "faturamento" },
+        ];
 
+        // Função que renderiza os botões nos cartões certos
+        function carregarPOPs() {
+            meusArquivos.forEach(pop => {
+                const container = document.getElementById(`setor-${pop.setor}`);
+                if (container) {
+                    const link = document.createElement('a');
+                    link.href = `pops/${pop.arquivo}`;
+                    link.target = "_blank";
+                    link.className = "flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100 transition-all group";
+                    link.innerHTML = `
+                        <div class="flex items-center text-xs font-semibold">
+                            <span class="material-icons text-red-500 mr-2 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                            ${pop.nome}
+                        </div>
+                        <span class="material-icons text-slate-400 text-sm">open_in_new</span>
+                    `;
+                    container.appendChild(link);
+                }
+            });
+        }
+
+        // Executa ao carregar a página
+        carregarPOPs();
+    </script>
+
+    <footer class="mt-20 py-10 text-center text-slate-400 text-xs">
+        <p>Organizado por <strong>Matheus Alves</strong> | Gestão Inteligente de POPs</p>
+    </footer>
 </body>
 </html>
