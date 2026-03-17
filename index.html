@@ -1,60 +1,82 @@
-<main class="container mx-auto mt-12 p-4">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de POPs - Camil Logística</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-slate-100 font-sans text-slate-900">
+
+    <header class="bg-[#004a99] text-white py-6 px-6 shadow-xl border-b-4 border-[#e31d2b]">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-extrabold tracking-tight">CAMIL | Central de POPs</h1>
+            <p class="mt-1 text-blue-100 font-medium italic text-sm">Logística de Excelência - Unidade Goiânia</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 p-4">
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
-                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-orange-500">
-                    <span class="material-icons text-orange-400 mr-3 text-2xl">settings_backup_restore</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Logística Reversa</h2>
+            <section class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200">
+                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-orange-500">
+                    <span class="material-icons text-orange-400 mr-3">settings_backup_restore</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Logística Reversa</h2>
                 </div>
-                <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Processos de devolução, avarias e retorno de paletes.</p>
-                    
-                    <a href="pops/logistica-reversa.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-orange-50 hover:border-orange-300 transition-all duration-300">
+                <div class="p-5 space-y-4">
+                    <p class="text-xs text-slate-500 italic">Processos de devolução e retorno.</p>
+                    <a href="pops/logistica-reversa.pdf" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-orange-50 hover:border-orange-300 transition-all">
                         <div class="flex items-center">
-                            <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-orange-800">POP 001 - Recebimento de Devolução</span>
+                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
+                            <span class="text-sm font-semibold">POP 001 - Recebimento</span>
                         </div>
-                        <span class="material-icons text-slate-400 group-hover:text-orange-600 transition-colors">open_in_new</span>
+                        <span class="material-icons text-slate-400 text-sm">open_in_new</span>
                     </a>
                 </div>
             </section>
 
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
-                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-[#e31d2b]">
-                    <span class="material-icons text-red-500 mr-3 text-2xl">description</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Faturamento e Transporte</h2>
+            <section class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200">
+                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-[#e31d2b]">
+                    <span class="material-icons text-red-500 mr-3">description</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Faturamento e Transporte</h2>
                 </div>
-                <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Emissão de NFs, CTEs e gestão de frotas/fretes.</p>
-                    
-                    <a href="pops/faturamento.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                <div class="p-5 space-y-4">
+                    <p class="text-xs text-slate-500 italic">Emissão de documentos e frotas.</p>
+                    <a href="pops/faturamento.pdf" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all">
                         <div class="flex items-center">
-                            <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-blue-800">POP 002 - Emissão de Notas Fiscais</span>
+                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
+                            <span class="text-sm font-semibold">POP 002 - Emissão NF</span>
                         </div>
-                        <span class="material-icons text-slate-400 group-hover:text-blue-600 transition-colors">open_in_new</span>
+                        <span class="material-icons text-slate-400 text-sm">open_in_new</span>
                     </a>
                 </div>
             </section>
 
-            <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
-                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-green-500">
-                    <span class="material-icons text-green-400 mr-3 text-2xl">inventory_2</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Estoque</h2>
+            <section class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200">
+                <div class="bg-slate-800 p-4 flex items-center border-b-2 border-green-500">
+                    <span class="material-icons text-green-400 mr-3">inventory_2</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider text-sm">Estoque</h2>
                 </div>
-                <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Acuracidade, endereçamento e movimentação interna.</p>
-                    
-                    <a href="pops/estoque.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-green-50 hover:border-green-300 transition-all duration-300">
+                <div class="p-5 space-y-4">
+                    <p class="text-xs text-slate-500 italic">Gestão e acuracidade.</p>
+                    <a href="pops/estoque.pdf" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-green-50 hover:border-green-300 transition-all">
                         <div class="flex items-center">
-                            <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-green-800">POP 003 - Inventário Rotativo</span>
+                            <span class="material-icons text-red-500 mr-3">picture_as_pdf</span>
+                            <span class="text-sm font-semibold">POP 003 - Inventário</span>
                         </div>
-                        <span class="material-icons text-slate-400 group-hover:text-green-600 transition-colors">open_in_new</span>
+                        <span class="material-icons text-slate-400 text-sm">open_in_new</span>
                     </a>
                 </div>
             </section>
 
         </div>
     </main>
+
+    <footer class="mt-20 py-8 text-center text-slate-500 text-xs">
+        <p>Desenvolvido por <strong>Matheus Alves</strong> | Método OEL</p>
+    </footer>
+
+</body>
+</html>
