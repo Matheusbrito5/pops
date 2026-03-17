@@ -1,66 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub de POPs - Camil Logística</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        /* Ajuste fino para as cores corporativas */
-        .bg-camil-blue { bg-color: #004a99; }
-        .border-camil-red { border-color: #e31d2b; }
-    </style>
-</head>
-<body class="bg-slate-50 font-sans text-slate-900">
-
-    <header class="bg-[#004a99] text-white py-8 px-6 shadow-xl border-b-4 border-[#e31d2b]">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-4xl font-extrabold tracking-tight">CAMIL | Central de POPs</h1>
-                <p class="mt-2 text-blue-100 font-medium italic">Logística de Excelência - Método OEL Aplicado</p>
-            </div>
-            <div class="text-center bg-white/10 p-4 rounded-xl border border-white/20">
-                <span class="material-icons text-3xl text-yellow-400">verified</span>
-                <p class="text-xs font-bold uppercase mt-1">Processos<br>Padronizados</p>
-            </div>
-        </div>
-    </header>
-
-    <main class="container mx-auto mt-12 p-4">
+<main class="container mx-auto mt-12 p-4">
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
-                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-[#e31d2b]">
-                    <span class="material-icons text-yellow-400 mr-3 text-2xl">input</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Recebimento e Carga</h2>
+                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-orange-500">
+                    <span class="material-icons text-orange-400 mr-3 text-2xl">settings_backup_restore</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider">Logística Reversa</h2>
                 </div>
                 <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Procedimentos de entrada de materiais.</p>
+                    <p class="text-sm text-slate-500 pb-2 border-b">Processos de devolução, avarias e retorno de paletes.</p>
                     
-                    <a href="pops/recebimento-nf.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                    <a href="pops/logistica-reversa.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-orange-50 hover:border-orange-300 transition-all duration-300">
                         <div class="flex items-center">
                             <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-blue-800">POP 001 - Conferência de NF</span>
+                            <span class="font-semibold text-slate-800 group-hover:text-orange-800">POP 001 - Recebimento de Devolução</span>
                         </div>
-                        <span class="material-icons text-slate-400 group-hover:text-blue-600 transition-colors">open_in_new</span>
+                        <span class="material-icons text-slate-400 group-hover:text-orange-600 transition-colors">open_in_new</span>
                     </a>
-                    </div>
+                </div>
             </section>
 
             <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
-                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-blue-500">
-                    <span class="material-icons text-blue-400 mr-3 text-2xl">inventory_2</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Armazenagem / WMS</h2>
+                <div class="bg-slate-800 p-5 flex items-center border-b-2 border-[#e31d2b]">
+                    <span class="material-icons text-red-500 mr-3 text-2xl">description</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider">Faturamento e Transporte</h2>
                 </div>
                 <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Gestão de estoque e endereçamento.</p>
+                    <p class="text-sm text-slate-500 pb-2 border-b">Emissão de NFs, CTEs e gestão de frotas/fretes.</p>
                     
-                    <a href="pops/inventario.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                    <a href="pops/faturamento.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
                         <div class="flex items-center">
                             <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-blue-800">POP 002 - Inventário Cíclico</span>
+                            <span class="font-semibold text-slate-800 group-hover:text-blue-800">POP 002 - Emissão de Notas Fiscais</span>
                         </div>
                         <span class="material-icons text-slate-400 group-hover:text-blue-600 transition-colors">open_in_new</span>
                     </a>
@@ -69,42 +40,21 @@
 
             <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 transition-all hover:shadow-2xl">
                 <div class="bg-slate-800 p-5 flex items-center border-b-2 border-green-500">
-                    <span class="material-icons text-green-400 mr-3 text-2xl">local_shipping</span>
-                    <h2 class="text-white font-bold uppercase tracking-wider">Expedição / Outbound</h2>
+                    <span class="material-icons text-green-400 mr-3 text-2xl">inventory_2</span>
+                    <h2 class="text-white font-bold uppercase tracking-wider">Estoque</h2>
                 </div>
                 <div class="p-6 space-y-4">
-                    <p class="text-sm text-slate-500 pb-2 border-b">Checklist de veículos e carregamento.</p>
+                    <p class="text-sm text-slate-500 pb-2 border-b">Acuracidade, endereçamento e movimentação interna.</p>
                     
-                    <a href="pops/check-carga.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                    <a href="pops/estoque.pdf" target="_blank" class="group flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-green-50 hover:border-green-300 transition-all duration-300">
                         <div class="flex items-center">
                             <span class="material-icons text-red-500 mr-4 group-hover:scale-110 transition-transform">picture_as_pdf</span>
-                            <span class="font-semibold text-slate-800 group-hover:text-blue-800">POP 003 - Checklist de Carga</span>
+                            <span class="font-semibold text-slate-800 group-hover:text-green-800">POP 003 - Inventário Rotativo</span>
                         </div>
-                        <span class="material-icons text-slate-400 group-hover:text-blue-600 transition-colors">open_in_new</span>
+                        <span class="material-icons text-slate-400 group-hover:text-green-600 transition-colors">open_in_new</span>
                     </a>
                 </div>
             </section>
 
         </div>
     </main>
-
-    <footer class="mt-24 py-12 border-t border-slate-200 bg-slate-100 text-center px-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-600">
-            <div>
-                <p class="font-bold">Camil Alimentos S/A</p>
-                <p>Unidade Logística de Goiânia</p>
-            </div>
-            <div>
-                <p class="font-bold">Responsável Técnico</p>
-                <p>Matheus Alves - Analista de Processos</p>
-            </div>
-            <div>
-                <p class="font-bold">Controle de Versão</p>
-                <p>Atualizado em: Maio 2026</p>
-            </div>
-        </div>
-        <p class="mt-10 text-xs text-slate-400 italic">© 2026 Camil Alimentos | Padronização é a base da melhoria contínua.</p>
-    </footer>
-
-</body>
-</html>
